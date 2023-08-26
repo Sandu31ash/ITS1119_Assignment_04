@@ -1,0 +1,61 @@
+:root{
+    --box-width: 150px;
+    --box-height: 75px;
+}
+
+section>div{
+    width: var(--box-width);
+    height: var(--box-height);
+    background-color: blue;
+    border-radius: 15px;
+    position: absolute;
+
+    animation-name: my_animation;
+    animation-duration: 6s;
+    /*animation-direction: reverse;*/
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*animation-delay: 3s;*/
+    /*animation-play-state: paused;*/
+}
+
+@keyframes my_animation {
+    0%{
+        margin-top: 0;
+        margin-left: 0;
+        /*background-color: blue;*/
+    }
+
+    25%{
+        background-color: gold;
+        margin-top: 0;
+        margin-left: calc(100vw - 150px);
+        transform: rotate(180deg);
+    }
+
+    50%{
+        background-color: red;
+        margin-top: calc(100vh - 75px);
+        margin-left: calc(100vw - 150px);
+        transform: rotate(360deg);
+    }
+
+    75%{
+        background-color: palevioletred;
+        /*margin-right: calc(100vw + 150px);*/
+        margin-left: 0;
+        margin-top: calc(100vh - 75px);
+        transform: rotate(180deg);
+    }
+
+    100%{
+        margin-top: 0;
+        margin-left: 0;
+        background-color: gold;
+    }
+
+}
+
+body{
+    overflow: hidden;
+}
