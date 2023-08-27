@@ -1,0 +1,142 @@
+body{
+    overflow: hidden;
+}
+
+section{
+    /*position: relative;*/
+}
+
+/*section>div:first-child{*/
+/*    position: absolute;*/
+/*}*/
+
+section>div:first-child>img{
+    position: relative;
+    /*top: 0;*/
+    height: calc(100vh - 30vh);
+    width: 100vw;
+}
+
+section>div:nth-child(2)>img{
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    position: absolute;
+    height: 40vh;
+    bottom: 30vh;
+}
+
+section>div:nth-child(3)>img{
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    position: absolute;
+    height: 40vh;
+    bottom: 30vh;
+    left: calc(100vw + 20px);
+}
+
+section>div:nth-child(4)>img{
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    position: absolute;
+    height: 40vh;
+    bottom: 30vh;
+    left: calc(200vw + 40px);
+}
+
+.ani{
+    animation-name: my_animation2;
+    animation-duration: 8s;
+    /*animation-direction: reverse;*/
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+}
+
+
+@keyframes my_animation2 {
+    from{
+
+    }
+
+    to{
+        /*right: 100vw;*/
+        transform: translateX(-100%);
+    }
+}
+
+/*section{*/
+/*    position: absolute;*/
+/*}*/
+
+/*section>div{*/
+/*    position: absolute;*/
+/*}*/
+
+section>div:nth-child(5)>img{
+    position: absolute;
+    bottom: 0;
+    /*top: 50vh;*/
+    height: 30vh;
+}
+
+section>div:nth-child(6)>img{
+    position: absolute;
+    bottom: 0;
+    /*top: 50vh;*/
+    height: 30vh;
+    left: 229.5vw;
+}
+
+section>div:nth-child(7)>img{
+    position: absolute;
+    bottom: 0;
+    /*top: 50vh;*/
+    height: 30vh;
+    /*left: 200vw;*/
+}
+
+section>div:nth-child(8)>img{
+    position: absolute;
+    bottom: 18vh;
+    width: 25vw;
+    height: 25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wheel{
+    position: absolute;
+    bottom: 20vh;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+
+    animation-name: my_animation1;
+    animation-duration: 8s;
+    /*animation-direction: reverse;*/
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+
+}
+
+@keyframes my_animation1 {
+    from{
+        /*background-color: transparent;*/
+    }
+
+    to{
+        transform: rotate(1440deg);
+        /*transform-origin: center;*/
+    }
+}
+
+section>div:nth-child(9)>img{
+    left: calc(39vw + 5px);
+}
+
+section>div:nth-child(10)>img{
+    left: calc(55vw - 3px);
+}
